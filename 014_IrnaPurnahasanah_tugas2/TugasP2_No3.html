@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mata Kuliah PBW">
+        <meta name="author" content=" Irna Purnahasanah">
+
+        <title> No.3 - Galeri </title>
+
+        <style>
+            *{
+                font-family: "Poppins";
+
+                margin: 0;
+                padding: 0;
+
+            }
+
+            body{
+                line-height: 50px;
+                width: auto;
+                height: 100%;
+
+                /* ukuran img di samain */
+                max-width: 600px;
+
+                /* ukuran padding */
+                padding: 20px;
+
+                /* gambar di tengah */
+                margin: auto;
+
+                box-sizing: border-box;
+
+                border-radius: 40px;
+                border: 1px solid black;
+            }
+
+            .galeri{
+                margin: 50px 0;
+                display: grid;
+
+                /* foto jadi sejajar */
+                grid-template-columns: 1fr 1fr 1fr;
+
+                /* ngasih ukuran baris dan kolom supaya ga dempet */
+                grid-gap: 40px;
+            }
+
+            img{
+                max-width: 100%;
+                height: auto;
+
+                object-fit: cover;
+
+                /* foto nge shape */
+                border-radius: 10px;
+            }
+
+            .galeri img{
+                /* gambar bergerak membesar 1 detik ketika kursor di dekatkan gambar */
+                transition: 0.6s;
+
+                
+                box-sizing: border-box;
+                
+                box-shadow: 0px 5px 14px rgb(168, 168, 168);
+            }
+
+            img:hover{
+                /* animasi memperbesar gambar ketika kursor didekatkan */
+                transform: scale(1.1);
+
+                /* gambar jadi b&w */
+                filter:grayscale(100);
+
+                /* cursor mouse ke gambar akan ada shadow hitam */
+                -webkit-box-shadow: 0 8px rgb(201, 137, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;"> ฅ^• Oramyeuw •^ฅ </h1>
+
+        <hr>
+
+        <h2 style="text-align: center; font-family: poppins medium;"> Orange Army Cats</h2>
+        <h5 style="text-align: center; font-family: poppins light;"> Galeri by : Irna Purnahasanah 20 014 </h5>
+
+        <hr>
+        <div class="galeri">
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/abdulaziz-alfawzan-fezCMmcJ338-unsplash.jpg" alt="">
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/stephen-tafra-E0Hh1j-ipjc-unsplash.jpg" alt="">
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/vinh-vo-DHtNRX38_wM-unsplash.jpg" alt="">
+
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/tucker-good-i5wk7pPTarY-unsplash.jpg" alt="">
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/sarah-ball-XpiPvnx0H5M-unsplash.jpg" alt="">
+            <img src="../Irna - Praktikum Pertemuan 2 (16-22FEB2022)/img/sandra-kapella-vObPof97_FM-unsplash.jpg" alt="">
+        </div>
+    </body>
+</html>
